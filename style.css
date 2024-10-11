@@ -1,0 +1,510 @@
+html {
+box-sizing: border-box;
+}
+*,*:before,*:after {
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: "TTLakes";
+    font-style: medium;
+    font-weight: 500;
+     
+    src: local("TTLakes"),
+          
+         url("/Макет1/font/TTLakes-Medium.woff") format("woff"),
+         url("/Макет1/font/TTLakes-Medium.ttf") format("ttf"),
+         url("/Макет1/font/TTLakes-Medium.eot") format("eot");
+
+  }
+  
+@font-face {
+    font-family: "TTLakes";
+    font-style: normal;
+    font-weight: 400;
+     
+    src: local("TTLakes"),
+          
+         url("/Макет1/font/TTLakes-Regular.woff") format("woff"),
+         url("/Макет1/font/TTLakes-Regular.ttf") format("ttf"),
+         url("/Макет1/font/TTLakes-Regular.eot") format("eot");
+
+  }
+  @font-face {
+    font-family: "TTLakes";
+    font-style: bold;
+    font-weight: 700;
+     
+    src: local("TTLakes"),
+          
+         url("/Макет1/font/TTLakes-Bold.woff") format("woff"),
+         url("/Макет1/font/TTLakes-Bold.ttf") format("ttf"),
+         url("/Макет1/font/TTLakes-Bold.eot") format("eot");
+
+  }
+/* Ширина экрана 320*/
+body {
+    font-family: "TTLakes", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin:0;
+}
+.conteiner{
+    width:320px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Хэдер*/
+.conteiner__header {
+    
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid #D9FFF5;
+
+}
+
+.menu {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    }
+.menu button {
+    
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border:none;
+}
+.menu__line {
+    height: 32px;
+    width: 2px;
+    
+    background-image: url("/Макет1/img/divider.png");
+}
+.menu__burger {
+    background-image: url("/Макет1/img/burger.png");
+}
+.menu__logo {
+    
+    width:96px;
+    min-height:50px;
+    background-image: url("/Макет1/img/Group.png");
+}
+.menu__tools {
+    background-image: url("/Макет1/img/repair.png");
+}
+.menu__seach {
+    background-image: url("/Макет1/img/checkstatus.png");
+    background-repeat: no-repeat;
+}
+.menu__tell,
+.menu__mesage,
+.menu__profil {
+    display: none;
+}
+/* Основной контент */
+.main {
+    display: flex;
+    flex-direction: column;
+}
+.main__title {
+    height:40px;
+    
+    border-left: 4px solid #41F6D7;
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+/* Субменю */
+
+.main__forscroll {
+    width: 100%;
+    
+    height: 70px;
+    overflow: hidden;
+    
+    margin-left:-20px;
+    
+      
+}
+.submenu {
+    display: flex;
+    height:100%;
+    width: 100%;
+    overflow-x: scroll;
+     box-sizing: content-box;
+    
+    padding-left:15px;
+    
+     
+}
+.submenu__link {
+    height:40px;
+    
+   
+    text-align:start;
+    border-radius: 5%;
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+    margin-top: 10px;
+    padding: 8px 9.3px 8px 16.54px;
+    white-space: nowrap;
+    
+}
+
+
+
+.submenu__link:nth-child(2) {
+    border: solid #B8FFEC;
+    margin-left:6px;
+}
+.submenu__link:first-child {
+    display:none;
+}
+
+.discrib {
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+.discrib__first{
+    padding-left: 15px;
+    margin-top:24px;
+}
+.discrib__second {
+    display: none;
+}
+.sector2__img {
+  background-image: url("/Макет1/img/_MG_3223.png");  
+  width:100%;
+  background-repeat:no-repeat;
+  height:176px;
+  margin-top:20px;
+}
+.link-readmore {
+    display: flex;
+    height:24px;
+   
+   
+}
+.link-readmore__icon {
+    background-image: url("/Макет1/img/expand.png");
+    width:24px;
+    margin-left: 16px;
+}
+.link-readmore__text {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+/*Средний экран */
+@media (min-width: 768px) {
+.menu__tell {
+    background-image: url("/Макет1/img/call.png");
+}
+.menu__mesage {
+    background-image: url("/Макет1/img/chat.png");
+}
+.menu__profil {
+    background-image: url("/Макет1/img/profile.png");
+}
+.menu__tell,
+.menu__mesage,
+.menu__profil,
+.menu__tools {
+    display: table;
+    position: relative;
+    left:45px;
+ }
+.menu__tell{
+   
+    left:160px;
+}
+.menu__mesage{
+    left:120px;
+}
+.menu__profil{
+    left:90px;
+}
+
+.menu__line {
+    
+    position: relative;
+    left:330px;
+   
+}
+.menu__logo::before {
+    content: "";
+    background-image: url("/Макет1/img/divider.png");
+    height: 32px;
+    width: 2px;
+    background-color: aqua;
+    display: block;
+    top:10px;
+    left:-30px;
+    position: relative;
+  
+}
+.main__forscroll{
+    width: 100%;
+    height: 40px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:10px;
+    padding-top: 10px;
+      
+}
+.main__title {
+    margin-top:24px;
+    margin-bottom: 32px;
+}
+
+.submenu {
+    
+    height: 62px;
+    padding-top: 10px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    margin-left: 19px;
+    li {
+        display: flex;
+        align-items: center;
+    }
+}
+.submenu__link {
+    height:40px;
+    margin-top:0;
+    text-align: center;
+    border-radius: 5%;
+    padding-left:5px;
+    padding-left:5px;
+    
+}
+.submenu__link:nth-child(5) {
+    display: none;
+   
+}
+
+.conteiner {
+    width: 768px;
+}
+ 
+ main {
+    background-color: #F8F8F8;
+    height: 416px;
+    padding-right: 15px;
+ }
+
+ .discrib {
+    flex-direction: row;
+    width: 100%;
+    height:208px;
+    justify-content:flex-start;
+
+ 
+
+ }
+
+.discrib__first {
+    margin-left: 24px;
+    margin-top:0px;
+    height: 160px;
+    margin-right: 48px;
+    padding-left: 0;
+}
+ 
+ 
+ .discrib__sector1 {
+    margin-top:32px;
+    width:50%;
+    height: 100%;
+    margin-bottom: 40px;
+ }
+ .discrib__sector2 {
+    margin-top:32px;
+    width:50%;
+    height: 100%;
+    margin-bottom: 40px;
+ }
+ .sector2__img {
+    
+    width:auto;
+    height:100%;
+    background-image: url("/Макет1/img/_MG_midle.png");
+   margin-top:0px;
+   margin-right: 25px;
+   background-repeat: no-repeat;
+  }
+  .discrib__first::after{
+    content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера";
+    display: block;
+    margin-top:20px;
+  }
+  .link-readmore {
+    margin-top: 10px;
+   
+  }
+  .link-readmore__icon
+  {
+    margin-left: 24px;
+  }
+}
+/*Широкий экран */
+@media (min-width: 1120px) {
+   
+    .conteiner__header {
+    
+       
+      padding:0;
+      margin-top:42px;
+      margin-right:25px;
+    } 
+ .main {
+   
+    padding:0;
+    
+ }
+
+ .conteiner{
+    width:1120px;
+    background-color: #F8F8F8;
+   
+}
+.menu__tell,
+.menu__mesage,
+.menu__profil,
+.menu__line,
+.menu__burger,
+.menu__logo
+ {
+    display: none;
+ }
+ .menu{
+   justify-content:  flex-end;
+  
+   height:100%;
+ }
+ .menu__tools {
+    margin-right: 200px;
+}
+ 
+ .menu__tools::before {
+    content: "Оставить заявку";
+    display: block;
+    position: relative;
+    left:-150px;
+    white-space:nowrap;
+    margin-top:10px;
+    font-weight: 500;
+    font-size: 16px;
+   
+ } 
+ .menu__seach::before {
+    content: "Статус ремонта";
+    display: block;
+    position: relative;
+    left:-130px;
+    white-space:nowrap;
+    margin-top:10px;
+    font-size: 16px;
+    font-weight: 500;
+   
+ }
+ 
+
+.main__title {
+    position: relative;
+    top:-66px;
+}
+
+.submenu__link:nth-child(5),
+.submenu__link:first-child
+ {
+    display: block;
+   
+}
+.main__forscroll{
+    width: 100%;
+    height: 85px;
+    margin: 0px;
+    position: relative;
+    top:-97px;
+   
+}
+.submenu {
+    display: flex;
+    flex-wrap: wrap;
+    height:90px;
+    list-style-type: none;
+    overflow: hidden;
+   justify-content: flex-start;
+    padding-left: 0;
+    margin-left:32px;
+     
+}
+.submenu__link {
+    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.submenu__link:first-child{
+    border: solid #B8FFEC;
+   
+}
+.submenu__link:nth-child(2){
+    border: none;
+    margin:0;
+}
+.link-readmore__icon {
+    margin-left: 32px;
+}
+.discrib {
+    position: relative;
+    top: -128px;
+}
+.discrib__first {
+    margin-left:34px;
+    margin-top:16px;
+    margin-right:36px;
+}
+.sector2__img {
+    background-image: url("/Макет1/img/large.png");
+    width:531px;
+    height: 307px;
+}
+li:nth-child(3),
+.discrib__first::after {
+    display: none;
+}
+.discrib__second {
+    display: block;
+    margin-left: 34px;
+    margin-top: 16px;
+    margin-right: 36px;
+    position: relative;
+    top: -104px;
+}
+
+.link-readmore {
+    
+    position: relative;
+    top: -98px;
+}
+
+
+
+}
+  
