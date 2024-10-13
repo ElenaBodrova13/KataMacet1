@@ -85,22 +85,22 @@ body {
     height: 32px;
     width: 2px;
     
-    background-image: url("/Макет1/img/divider.png");
+    background-image: url("../Макет1/img/divider.png");
 }
 .menu__burger {
-    background-image: url("/Макет1/img/burger.png");
+    background-image: url("../Макет1/img/burger.png");
 }
 .menu__logo {
     
     width:96px;
     min-height:50px;
-    background-image: url("/Макет1/img/Group.png");
+    background-image: url("../Макет1/img/Group.png");
 }
 .menu__tools {
-    background-image: url("/Макет1/img/repair.png");
+    background-image: url("../Макет1/img/repair.png");
 }
 .menu__seach {
-    background-image: url("/Макет1/img/checkstatus.png");
+    background-image: url("../Макет1/img/checkstatus.png");
     background-repeat: no-repeat;
 }
 .menu__tell,
@@ -183,7 +183,7 @@ body {
     display: none;
 }
 .sector2__img {
-  background-image: url("/Макет1/img/_MG_3223.png");  
+  background-image: url("../Макет1/img/_MG_3223.png");  
   width:100%;
   background-repeat:no-repeat;
   height:176px;
@@ -196,7 +196,7 @@ body {
    
 }
 .link-readmore__icon {
-    background-image: url("/Макет1/img/expand.png");
+    background-image: url("../Макет1/img/expand.png");
     width:24px;
     margin-left: 16px;
 }
@@ -208,13 +208,13 @@ body {
 /*Средний экран */
 @media (min-width: 768px) {
 .menu__tell {
-    background-image: url("/Макет1/img/call.png");
+    background-image: url("../Макет1/img/call.png");
 }
 .menu__mesage {
-    background-image: url("/Макет1/img/chat.png");
+    background-image: url("../Макет1/img/chat.png");
 }
 .menu__profil {
-    background-image: url("/Макет1/img/profile.png");
+    background-image: url("../Макет1/img/profile.png");
 }
 .menu__tell,
 .menu__mesage,
@@ -243,7 +243,7 @@ body {
 }
 .menu__logo::before {
     content: "";
-    background-image: url("/Макет1/img/divider.png");
+    background-image: url("../Макет1/img/divider.png");
     height: 32px;
     width: 2px;
     background-color: aqua;
@@ -342,7 +342,7 @@ body {
     
     width:auto;
     height:100%;
-    background-image: url("/Макет1/img/_MG_midle.png");
+    background-image: url("../Макет1/img/_MG_midle.png");
    margin-top:0px;
    margin-right: 25px;
    background-repeat: no-repeat;
@@ -481,7 +481,7 @@ body {
     margin-right:36px;
 }
 .sector2__img {
-    background-image: url("/Макет1/img/large.png");
+    background-image: url("../Макет1/img/large.png");
     width:531px;
     height: 307px;
 }
