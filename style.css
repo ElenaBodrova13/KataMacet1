@@ -183,7 +183,7 @@ body {
     display: none;
 }
 .sector2__img {
-  background-image: url("./img/_MG_3223.png");  
+  background-image: url("./img/small.png");  
   width:100%;
   background-repeat:no-repeat;
   height:176px;
@@ -342,7 +342,7 @@ body {
     
     width:auto;
     height:100%;
-    background-image: url("./img/_MG_midle.png");
+    background-image: url("./img/midle.png");
    margin-top:0px;
    margin-right: 25px;
    background-repeat: no-repeat;
