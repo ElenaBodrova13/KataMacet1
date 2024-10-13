@@ -13,9 +13,9 @@ box-sizing: border-box;
      
     src: local("TTLakes"),
           
-         url("/Макет1/font/TTLakes-Medium.woff") format("woff"),
-         url("/Макет1/font/TTLakes-Medium.ttf") format("ttf"),
-         url("/Макет1/font/TTLakes-Medium.eot") format("eot");
+         url("./font/TTLakes-Medium.woff") format("woff"),
+         url("./font/TTLakes-Medium.ttf") format("ttf"),
+         url("./font/TTLakes-Medium.eot") format("eot");
 
   }
   
@@ -26,9 +26,9 @@ box-sizing: border-box;
      
     src: local("TTLakes"),
           
-         url("/Макет1/font/TTLakes-Regular.woff") format("woff"),
-         url("/Макет1/font/TTLakes-Regular.ttf") format("ttf"),
-         url("/Макет1/font/TTLakes-Regular.eot") format("eot");
+         url("./font/TTLakes-Regular.woff") format("woff"),
+         url("./font/TTLakes-Regular.ttf") format("ttf"),
+         url("./font/TTLakes-Regular.eot") format("eot");
 
   }
   @font-face {
@@ -38,9 +38,9 @@ box-sizing: border-box;
      
     src: local("TTLakes"),
           
-         url("/Макет1/font/TTLakes-Bold.woff") format("woff"),
-         url("/Макет1/font/TTLakes-Bold.ttf") format("ttf"),
-         url("/Макет1/font/TTLakes-Bold.eot") format("eot");
+         url("./font/TTLakes-Bold.woff") format("woff"),
+         url("./font/TTLakes-Bold.ttf") format("ttf"),
+         url("./font/TTLakes-Bold.eot") format("eot");
 
   }
 /* Ширина экрана 320*/
